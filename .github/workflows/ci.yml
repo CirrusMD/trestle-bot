@@ -28,7 +28,7 @@ jobs:
         uses: oxsecurity/megalinter@5199c6377b4cb7faff749a1971636f3343db9fe6 # pin@v7
         env:
           VALIDATE_ALL_CODEBASE: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.FEDRAMP_GITHUB_AUTOMATION }}
 
   project_checks:
     name: Run project checks
